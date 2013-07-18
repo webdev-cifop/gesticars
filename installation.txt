@@ -1,0 +1,45 @@
+INSTALLATION DE GESTICARS
+
+Créer une base de données mysql sur votre serveur ayant pour nom : gesticars
+
+Une fois votre Base de donnée crée cliquez dessus et cliquez sur importer.
+
+Selectionner le fichier: gesticars.sql
+
+Le format est: SQL 
+
+le jeu de caractère est: UTF-8
+
+Permettre l'interruption de l'importation si la limite de temps 
+configurée dans PHP est sur le point d'être atteinte. (Ceci pourrait aider à importer des fichiers volumineux, au détriment du respect des transactions.) doit etre coché
+
+Nombre de lignes à ignorer à partir de la première ligne : 0
+
+le mode de compatiblité doit etre sur NONE
+
+Ne pas utiliser AUTO_INCREMENT pour la valeur zéro doit être coché
+
+cliquez sur executer
+
+La base de données est crée !
+
+Ouvrez modele.php avec un editeur (notepad++)
+remplacer: 
+leNomDuServeur par le nom de votre serveur,
+leNomUtilisateur par votre nom utilisateur pour acceder au serveur,
+leMotDePasse par votre mot de passe pour acceder au serveur
+
+Copiez sur le serveur les fichiers et dossiers:
+acces_login.php
+index.php
+ctrllogin.php
+modele.php
+vue.php
+agenda
+script
+style
+
+
+
+
+

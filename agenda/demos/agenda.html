@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href='../fullcalendar/fullcalendar.css' rel='stylesheet' />
+<link href='../fullcalendar/fullcalendar.print.css' rel='stylesheet' media='print' />
+<script src='../jquery/jquery-1.9.1.min.js'></script>
+<script src='../jquery/jquery-ui-1.10.2.custom.min.js'></script>
+<script src='../fullcalendar/fullcalendar.min.js'></script>
+<script>
+
+	$(document).ready(function() {
+	
+		var date = new Date();
+		var d = date.getDate();
+		var m = date.getMonth();
+		var y = date.getFullYear();
+		
+		$('#calendar').fullCalendar({
+			header: {
+				left: 'prev,next today',
+				center: 'title',
+				right: 'month,agendaWeek,agendaDay'
+			},
+			editable: false,
+			events: "json-events.php"
+		});
+		
+	});
+
+</script>
+<style>
+
+	body {
+		margin-top: 40px;
+		text-align: center;
+		font-size: 14px;
+		font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
+		}
+
+	#calendar {
+		width: 900px;
+		margin: 0 auto;
+		}
+
+</style>
+</head>
+<body>
+<div id='calendar'></div>
+<form method='post' action='../../index.php?page=AfficherDemande' class='validate'>
+<input type='submit' name='logger' value='retour'>
+</form>
+<img src='../../style/images/partenaires.jpg' alt='logo partenaires'/>
+</body>
+</html>

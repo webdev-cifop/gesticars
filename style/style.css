@@ -1,0 +1,145 @@
+
+#main{
+	width: 960px;
+	margin: 10px auto;
+	padding: 10px 0;
+	background: linear-gradient(to bottom, #bfd2ff, rgba(200,110,210,0));
+}
+
+.lien {
+	text-align: center;
+}
+
+.form {
+	margin-left: 200px;
+}
+
+.login {
+	width: 400px;
+	margin-left: 580px;
+	background: linear-gradient(to bottom, #bfd2ff, rgba(200,110,210,0));
+	color:white;
+	letter-spacing: 2;
+	margin-top: 50;
+	border-style: outset;
+	border-width: 6px 6px;
+}
+
+.formulaire{
+	width: 400px;
+	margin-left: 580px;
+	background: linear-gradient(to bottom, #bfd2ff, rgba(200,110,210,0));
+	/*color:white;*/
+	letter-spacing: 2;
+	margin-top: 50;
+	border-style: outset;
+	border-width: 6px 6px;
+}
+
+h3 {
+	text-align: center;
+	font:normal small-caps 120%/120% Lucida Handwriting;
+	letter-spacing: 2;
+}
+
+#top{
+	width: 930px;
+//	height: 50px;
+	margin: 0 10px 10px 10px;
+	padding: 5px;
+	background: linear-gradient(to bottom, #bfd2ff, rgba(500,310,210,0));
+}
+
+#side{
+	width: 220px;
+	float: left;
+	min-height: 400px;
+	margin: 0 10px;
+	background: linear-gradient(to bottom, #bfd2ff, rgba(500,310,210,0));
+}
+
+ul {
+list-style-image: url(images/adios_puce_bleue.gif);
+}
+
+li .sous_menu{
+list-style-image: url(images/puce_bleue.gif);
+}
+
+.sous_menu {
+display: none;
+}
+
+li:hover .sous_menu {
+display: block;
+}
+
+
+.content{
+	width: 710px;
+	float: left;
+	margin-bottom: 10px;
+	min-height: 400px;
+	background: linear-gradient(to bottom, #bfd2ff, rgba(500,310,210,0));
+}
+
+#footer{
+	clear: left;
+	width: 930px;
+	height: 60px;
+	margin: 0 10px;
+	padding: 5px;
+	background: linear-gradient(to bottom, #bfd2ff, rgba(500,310,210,0));
+}
+
+h1{
+	text-align: center;
+	color: blue;
+	border: 7px outset #bfd2ff;
+	font-family: bradley hand ITC;
+}
+
+h2{
+	text-align: center;
+	color: blue;
+	font-family: bradley hand ITC;
+	border: 7px outset #bfd2ff; 
+	padding: 8px
+}
+
+#footer h2{
+	text-align: center;
+}
+
+table, th, td{
+	border-style: dotted;
+	border-collapse: collapse;
+	margin-left:auto;
+	margin-right:auto;
+	padding: 6;
+}
+
+img{
+	width: 100px;
+	margin-bottom: 10px;
+	margin-left: 730px;
+	
+}
+
+#ok{
+	text-align: center;
+	color: red;
+	font-variant: small-caps;	
+}
+
+.deconnect{
+	text-align: center;
+	background: radial-gradient(#e6e6fa, #add8e6);
+	margin-left:40px;
+}
+
+.overflow{
+	overflow-y: scroll;
+	height: 300px;
+}
+
