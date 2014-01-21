@@ -3,7 +3,7 @@
 	{
 		try
 		{
-			$bdd = new pdo ('mysql:host = leNomDuServeur; dbname=gesticars', 'leNomUtilisateur', 'leMotDePasse');
+			$bdd = new pdo ('mysql:host = localhost; dbname=gesticars', 'root', '');
 		}
 		catch (Exception $e)
 		{

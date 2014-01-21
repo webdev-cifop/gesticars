@@ -1,11 +1,11 @@
 ﻿<?php
-session_start();
-
 require ('modele.php');
 
-If (!isset($_SESSION['connect']))
-{
-	$_SESSION['connect']=0;
+if(!isset($_SESSION)){
+	session_start();
+	If (!isset($_SESSION['connect'])){
+		$_SESSION['connect'] = 0;
+	}
 	$page='identification';
 }
 
@@ -43,34 +43,31 @@ If($_SESSION['connect']==1)
 	{
 		save_demande();
 		echo "<div id='ok'>Votre demande à bien été enregistré</div>";
-		header("Location: ./index.php?page=demandeResa");
+		session_destroy();
 	}
 	
 	If (isset($_POST['demande_resa']) and (!empty($_POST['mail'])) and (empty($_POST['permis'])))
 	{
 		save_demande();
 		update_mail_agent();
-		echo "Votre demande ainsi que votre mail ont bien été enregistré";
-		header("Location: ./index.php?page=demandeResa");
-
+		echo "<div id='ok'>Votre demande ainsi que votre mail ont bien été enregistré</div>";
+		session_destroy();
 	}
 	
 	If (isset($_POST['demande_resa']) and (!empty($_POST['mail'])) and (!empty($_POST['permis'])))
 	{
 		save_demande();
 		update_mail_permis_agent();
-		echo "Votre demande ainsi que votre mail et N° de permis ont bien été enregistré";
-		header("Location: ./index.php?page=demandeResa");
-
-		
+		echo "<div id='ok'>Votre demande ainsi que votre mail et N° de permis ont bien été enregistré</div>";
+		session_destroy();
 	}
 	
 	If (isset($_POST['demande_resa']) and (empty($_POST['mail'])) and (!empty($_POST['permis'])))
 	{
 		save_demande();
 		update_permis_agent();
-		echo "Votre demande ainsi que votre N° de permis ont bien été enregistré";
-		header("Location: ./index.php?page=demandeResa");
+		echo "<div id='ok'>Votre demande ainsi que votre N° de permis ont bien été enregistré</div>";
+		session_destroy();
 
 	}
 	

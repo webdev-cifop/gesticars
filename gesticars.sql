@@ -647,7 +647,7 @@ CREATE TABLE IF NOT EXISTS `demande_resa` (
   `id_agent_demande` int(11) NOT NULL,
   PRIMARY KEY (`id_demande`,`id_agent_demande`),
   KEY `FK_demande_resa_id_agent_demande` (`id_agent_demande`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -686,8 +686,8 @@ CREATE TABLE IF NOT EXISTS `login` (
 --
 
 INSERT INTO `login` (`id_login`, `nom_login`, `mdp`, `id_role_role`) VALUES
-(1, 'admin', 'dece3b8afb4ac0c22d03da93e7a343f6fc6b39e6', 1),
-(2, 'agent', '5e871a2138c9df0ced403e135003c261c98285f6', 2);
+(1, 'admin', 'd033e22ae348aeb5660fc2140aec35850c4da997', 1),
+(2, 'agent', '0608c4054662dd902e1314f7e450e3eaa81c1143', 2);
 
 -- --------------------------------------------------------
 
